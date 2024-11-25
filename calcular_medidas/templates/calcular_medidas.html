@@ -1,5 +1,10 @@
 {% extends 'base.html' %} {% block content %}
 <div class="container">
   <h1 class='display-5 text-center'>Calcular medidas</h1>
+
+  {% block crear_ventana %}
+    {% include 'crear_ventana.html' %}
+  {% endblock %}
+
 </div>
 {% endblock %}

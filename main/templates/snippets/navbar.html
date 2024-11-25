@@ -22,9 +22,11 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Link1</a>
         </li>
+        {% if user.is_authenticated %}
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'calcular_medidas' %}">Calcular medida</a>
+          <a class="nav-link" href="{% url 'calcular_medidas' %}">Calcular medidas</a>
         </li>
+        {% endif %}
         <li class="nav-item">
           <a class="nav-link" href="#">Link3</a>
         </li>
