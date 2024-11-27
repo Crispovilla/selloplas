@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main',
     'calcular_medidas',
+    'cotizaciones'
 ]
 
 MIDDLEWARE = [
