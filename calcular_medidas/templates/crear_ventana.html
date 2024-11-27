@@ -21,7 +21,7 @@
         <button type="submit" class="btn btn-primary">Crear Ventana</button>
     </form>
     
-
+<div class='container  pb-5'>
     {% if resultado %}
         <hr>
         <h2>Detalles de la Ventana: {{ tipo_ventana|title }}</h2>
@@ -30,6 +30,10 @@
             {% for key, value in resultado.items %}
                 <li><strong>{{ key }}:</strong> {{ value }}</li>
             {% endfor %}
+
         </ul>
+        <a href="{% url 'calcular_medidas' %}" type="submit" class="btn btn-outline-primary">Resetear valores</a>
     {% endif %}
+</div>
+
 </div>
